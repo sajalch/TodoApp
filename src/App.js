@@ -29,7 +29,7 @@ function App() {
       <button onClick={handleAddTodo}>Add Todo</button>
       <button onClick={clearTodos}>Clear All Todos</button>
       </div>
-      <TodoList toggleTodo={toggleTodo} todos={todos}/>
+      <TodoList todos={todos}/>
     </div>
   );
 }
