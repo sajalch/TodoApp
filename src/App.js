@@ -6,12 +6,6 @@ function App() {
   const [todos, settodos] = useState([])
   const todoNameRef=useRef();
   
-  const toggleTodo=(id)=>{
-    const newTodos=[...todos];
-    const todo=newTodos.find(todo=>todo.id === id)
-    todo.isComplete=!todo.isComplete
-    settodos(newTodos);
-  }
   const handleAddTodo=(e)=>{
     const name = todoNameRef.current.value
     if( name=== '') return

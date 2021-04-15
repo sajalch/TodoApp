@@ -1,8 +1,8 @@
 import React from 'react'
 import Todo from './Todo'
-function TodoList({todos, toggleTodo}) {
+function TodoList({todos}) {
     return (
-        todos.map((todo)=><Todo toggleTodo={toggleTodo} key={todo.id} todo={todo}/>)
+        todos.map((todo)=><Todo  key={todo.id} todo={todo}/>)
     )
 }
 
